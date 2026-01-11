@@ -44,4 +44,4 @@ A service for scheduling and sending delayed notifications via Telegram. The bot
 - PostgreSQL
 - RabbitMQ
 - Telegram Bot API
-- Gin Web Framework
+- Gin Web Framework# NAPOMINANIE-TG-BOT
