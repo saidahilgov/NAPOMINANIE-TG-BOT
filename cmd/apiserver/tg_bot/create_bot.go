@@ -1,21 +1,16 @@
 package tg_bot
 
 import (
-	"os"
 	"strings"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
-	"github.com/joho/godotenv"
 	"github.com/wb-go/wbf/zlog"
 )
 
 func Init() (*tgbotapi.BotAPI, error) {
-	err := godotenv.Load()
-	if err != nil {
-		return nil, err
-	}
+	botToken := "your_bot_token_here" // Вставьте сюда ваш токен бота
 
-	bot, err := tgbotapi.NewBotAPI(os.Getenv("BOT_TOKEN"))
+	bot, err := tgbotapi.NewBotAPI(botToken)
 	if err != nil {
 		return nil, err
 	}
